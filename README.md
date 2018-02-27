@@ -1,8 +1,10 @@
 # Transform-registry
-A registry of transforms that implementers are using for integration and interoperability within UK Health and Social Care.
+A registry of transforms that implementers are using for integration and interoperability within UK Health and Social Care. Browse this registry to learn who in the UK is developing transforms, and to share experience with them.
+
+transform-register.xls is an index of transforms by source structure and target structure, with an email link to the originator, and links to other materials in this repository, such as test cases or software.
 
 ## Contributions
-Contributions to this repository are actively encouraged.
+Add a row to the spreadsheet if you are developing a healthcare data transform, or have developed it or are planning to, and are willing to share experience with others. Contribute other material such as test cases if you wish to.
 
 Please submit contributions as pull requests to the master branch. It will be appreciated if the pull request description includes the rationale for the change!
 
