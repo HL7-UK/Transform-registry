@@ -6,6 +6,8 @@ transform-register.xls is an index of transforms by source structure and target 
 ## Contributions
 Add a row to the spreadsheet if you are developing a healthcare data transform, or have developed it or are planning to, and are willing to share experience with others. Contribute other material such as test cases if you wish to.
 
+For the meanings of columns in the spreadsheet, see the wiki.
+
 Please submit contributions as pull requests to the master branch. It will be appreciated if the pull request description includes the rationale for the change!
 
 ## License
