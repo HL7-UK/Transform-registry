@@ -1,0 +1,31 @@
+{
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 0,
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "OperationOutcome",
+                "issue": [
+                    {
+                        "severity": "warning",
+                        "code": "informational",
+                        "details": {
+                            "coding": [
+                                {
+                                    "system": "2.16.840.1.113883.2.1.3.2.4.17.285",
+                                    "code": "DEMOG-0007"
+                                }
+                            ],
+                            "text": "Multiple matches found"
+                        },
+                        "diagnostics": "Supply additional information to refine the search."
+                    }
+                ]
+            },
+            "search": {
+                "mode": "outcome"
+            }
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Bundle xmlns="http://hl7.org/fhir">
+	<language value="en"/>
+	<!--Entry in the bundle - will have a resource, or information-->
+	<entry xmlns="">
+		<!--A resource in the bundle-->
+		<resource>
+			<!--Allergy or Intolerance (generally: Risk of adverse reaction to a substance)-->
+			<AllergyIntolerance>
+				<!--A reference from one resource to another-->
+				<patient>
+					<reference value="1234"/>
+					<display value="Alan Watts"/>
+				</patient>
+				<!--Adverse Reaction Events linked to exposure to substance-->
+				<reaction>
+					<!--Concept - reference to a terminology or just  text-->
+					<substance>
+						<!--A reference to a code defined by a terminology system-->
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="1239085"/>
+							<display value="Flour"/>
+						</coding>
+					</substance>
+					<!--Concept - reference to a terminology or just  text-->
+					<manifestation>
+						<!--A reference to a code defined by a terminology system-->
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<display value="Sneezing"/>
+						</coding>
+					</manifestation>
+				</reaction>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<!--Entry in the bundle - will have a resource, or information-->
+	<entry xmlns="">
+		<!--A resource in the bundle-->
+		<resource>
+			<!--A person with a  formal responsibility in the provisioning of healthcare or rela...-->
+			<Practitioner>
+				<!--Name of a human - parts and usage-->
+				<name>
+					<family value="Dr Tony Shannon"/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+</Bundle>

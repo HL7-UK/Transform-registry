@@ -1,0 +1,20 @@
+From:	Dunmail Hodkinson [dunmail@blackpear.com]
+Sent:	Tuesday, May 22, 2018 2:07 PM
+To:	robert worden
+Subject:	HL7 UK - transform registry
+Hi Robert,
+
+As promised, content for the HL7 UK transform project! 
+
+Black Pear provide a FHIR API allowing patient search on PDS. Internally, this 
+uses the NHS SMSP endpoint to retrieve patient details from PDS, with the ITK 
+response transformed to FHIR Patient search results.
+
+This is a subset of the regression test cases for the service - it may be of 
+use to other organisations needing to transform SMSP results to FHIR. Black 
+Pear is happy for this to be shared via the HL7 UK registry.
+
+Cheers,
+Dunmail
+
+

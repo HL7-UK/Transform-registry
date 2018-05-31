@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:itk="urn:nhs-itk:ns:201005">
+    <soap:Header>
+        <wsa:MessageID>83146242-dfb0-4c28-b236-7852245c65ef</wsa:MessageID>
+        <wsa:Action>urn:nhs-itk:services:201005:getPatientDetails-v1-0</wsa:Action>
+        <wsa:To>https:&#x2F;&#x2F;192.168.128.11&#x2F;smsp&#x2F;pds</wsa:To>
+        <wsa:From>
+            <wsa:Address>http:&#x2F;&#x2F;dev.blackpear.com</wsa:Address>
+        </wsa:From>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="0938c8a5-8dd8-4ea8-a0d9-fee993720014">
+                <wsu:Created>2018-05-22T12:47:45.470Z</wsu:Created>
+                <wsu:Expires>2018-05-22T13:07:45.472Z</wsu:Expires>
+            </wsu:Timestamp>
+            <wsse:UsernameToken>
+                <wsse:Username>blackpear</wsse:Username>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+        <itk:DistributionEnvelope>
+            <itk:header service="urn:nhs-itk:services:201005:getPatientDetails-v1-0" trackingid="00AD3808-2682-4D73-8836-A92E94C0054F">
+                <itk:auditIdentity>
+                    <itk:id type="2.16.840.1.113883.2.1.3.2.4.18.27" uri="urn:nhs-uk:identity:ods:8HV05:warden.blackpear.com:user@nhs.net"/>
+                    <itk:id type="1.2.826.0.1285.0.2.0.107" uri="918999199395" />
+                </itk:auditIdentity>
+                <itk:manifest count="1">
+                    <itk:manifestitem id="uuid_CF76835E-B3CD-46AC-936B-8A2231B5ABE4" mimetype="text/xml" profileid="urn:nhs-en:profile:getPatientDetailsRequest-v1-0" metadata="false" base64="false" compressed="false" encrypted="false"/>
+                </itk:manifest>
+                <itk:senderAddress uri="urn:nhs-uk:addressing:ods:8HV05"/>
+            </itk:header>
+            <itk:payloads count="1">
+                <itk:payload id="uuid_CF76835E-B3CD-46AC-936B-8A2231B5ABE4">
+                    <getPatientDetails-v1-0 xmlns="urn:hl7-org:v3" moodCode="EVN" classCode="CACT">
+                        <id root="D1B07B90-DB70-459B-A3B0-020D80C13AE7"/>
+                        <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.284" code="getPatientDetailsRequest-v1-0"/>
+                        <queryEvent>
+                            <Person.DateOfBirth>
+                                <value value="19320608"/>
+                                <semanticsText>Person.DateOfBirth</semanticsText>
+                            </Person.DateOfBirth>
+                            <Person.Gender>
+                                <value code="2" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25"/>
+                                <semanticsText>Person.Gender</semanticsText>
+                            </Person.Gender>
+                            <Person.Name>
+                                <value>
+                                    
+                                    <family>DUAL*</family>
+                                </value>
+                                <semanticsText>Person.Name</semanticsText>
+                            </Person.Name>
+                        </queryEvent>
+                    </getPatientDetails-v1-0>
+                </itk:payload>
+            </itk:payloads>
+        </itk:DistributionEnvelope>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Bundle xmlns="http://hl7.org/fhir">
+	<!--Entry in the bundle - will have a resource, or information-->
+	<entry xmlns="">
+		<!--A resource in the bundle-->
+		<resource>
+			<!--Information about an individual or animal receiving health care services-->
+			<Patient>
+				<id value="001"/>
+				<!--An identifier intended for computation-->
+				<identifier>
+					<system value="NHS"/>
+					<value value="3333333333"/>
+				</identifier>
+				<!--Name of a human - parts and usage-->
+				<name>
+					<use value="nickname"/>
+					<family value="SMITH"/>
+					<given value="FREDRICA"/>
+					<prefix value="MRS"/>
+				</name>
+				<!--Details of a Technology mediated contact point (phone, fax, email, etc.)-->
+				<telecom>
+					<system value="phone"/>
+					<value value="+441234567890"/>
+				</telecom>
+				<gender value="female"/>
+				<birthDate value="1965-11-12"/>
+				<!--An address expressed using postal conventions (as opposed to GPS or other locati...-->
+				<address>
+					<use value="home"/>
+					<line value="29 WEST AVENUE"/>
+					<line value="BURYTHORPE"/>
+					<city value="MALTON"/>
+					<district value="NORTH YORKSHIRE"/>
+					<postalCode value="YO32 5TT"/>
+					<country value="GBR"/>
+				</address>
+				<!--A contact party (e.g. guardian, partner, friend) for the patient-->
+				<contact id="002">
+					<!--Name of a human - parts and usage-->
+					<name>
+						<use value="official"/>
+						<family value="SMITH"/>
+						<given value="FRANCESCA"/>
+						<prefix value="MRS"/>
+					</name>
+					<!--Details of a Technology mediated contact point (phone, fax, email, etc.)-->
+					<telecom>
+						<system value="phone"/>
+						<value value="+441234567890"/>
+					</telecom>
+					<!--An address expressed using postal conventions (as opposed to GPS or other locati...-->
+					<address>
+						<use value="home"/>
+						<line value="29 WEST AVENUE"/>
+						<line value="BURYTHORPE"/>
+						<city value="MALTON"/>
+						<district value="NORTH YORKSHIRE"/>
+						<postalCode value="YO32 5TT"/>
+						<country value="GBR"/>
+					</address>
+				</contact>
+				<!--A list of Languages which may be used to communicate with the patient about his ...-->
+				<communication>
+					<!--Concept - reference to a terminology or just  text-->
+					<language>
+						<!--A reference to a code defined by a terminology system-->
+						<coding>
+							<code value="en"/>
+						</coding>
+					</language>
+				</communication>
+			</Patient>
+		</resource>
+	</entry>
+	<!--Entry in the bundle - will have a resource, or information-->
+	<entry xmlns="">
+		<!--A resource in the bundle-->
+		<resource>
+			<!--A person with a  formal responsibility in the provisioning of healthcare or rela...-->
+			<Practitioner>
+				<!--An identifier intended for computation-->
+				<identifier>
+					<system value="GP_ID"/>
+					<value value="G5612908"/>
+				</identifier>
+				<!--Name of a human - parts and usage-->
+				<name>
+					<family value="Townley"/>
+					<given value="Gregory"/>
+					<prefix value="Dr"/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+</Bundle>
